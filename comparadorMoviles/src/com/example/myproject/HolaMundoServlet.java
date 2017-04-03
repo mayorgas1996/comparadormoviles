@@ -7,6 +7,6 @@ import javax.servlet.http.*;
 public class HolaMundoServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		resp.setContentType("text/plain");
-		resp.getWriter().println("El movil a buscar es: " + req.getParameter("movil"));
+		resp.getWriter().println("El movil a buscar es... " + req.getParameter("movil"));
 	}
 }

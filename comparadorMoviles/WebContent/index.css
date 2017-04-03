@@ -1,0 +1,16 @@
+header{
+	font-family: cursive; 
+	font-weight: 500; 
+	background-color: skyblue; 
+	text-align: center;
+}
+
+form input {
+	border-radius: 10px;
+    width: 40%;
+    height: 8%;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 20px;
+    font-family: cursive;
+}

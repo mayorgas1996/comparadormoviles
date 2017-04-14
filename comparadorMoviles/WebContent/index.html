@@ -43,5 +43,22 @@
 	
 	</form>
 	
+		  		<c:forEach items="${articulosAmazon}" var="resuAmazon">
+		                <a href="${resuAmazon.URLproduct}">
+		                    <div style="width:100%">
+		                        <header >
+		                            <p>${resuAmazon.title}</p>
+		                        </header>
+		                        <img src="${resuAmazon.urlImage}" alt="blabla" width=160 height=160">
+		
+		                        	<p>Amazon</p>
+		                            <div >
+									  <span >Precio:${resuAmazon.Price} euros</span>
+									</div>
+		                    </div>
+		                </a>
+		  		</c:forEach>
+	
+	
   </body>
 </html>

@@ -19,4 +19,14 @@
     <servlet-name>HolaMundoServlet</servlet-name>
     <url-pattern>/holamundo</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description>Sample Servlet</description>
+    <display-name>ComparadorMovilesServlet</display-name>
+    <servlet-name>ComparadorMovilesServlet</servlet-name>
+    <servlet-class>com.example.myproject.ComparadorMovilesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ComparadorMovilesServlet</servlet-name>
+    <url-pattern>/comparadormoviles</url-pattern>
+  </servlet-mapping>
 </web-app>

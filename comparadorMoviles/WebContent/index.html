@@ -21,7 +21,6 @@
 	<form action="/holamundo">
 
 	<datalist id="listaMoviles"> 
-        <option value="Xiaomi"></option> 
     	<option value="Apple"></option>
     	<option value="Samsung"></option>
     	<option value="Motorola"></option>
@@ -30,34 +29,13 @@
     	<option value="Lenovo"></option>
     	<option value="LG"></option>
     	<option value="Nokia"></option>
-    	<option value="OnePlus"></option>
-    	<option value="Zuk"></option>
-    	<option value="ZTE"></option>
-    	<option value="Wiko"></option>
-    	<option value="Meizu"></option>
 	</datalist>
 	
 	<input type="text" name="movil" id="buscador" placeholder="Introduzca el dispositivo" required list="listaMoviles">
-
+	
   	<input type="submit" value="Buscar">
 	
 	</form>
-	
-		  		<c:forEach items="${articulosAmazon}" var="resuAmazon">
-		                <a href="${resuAmazon.URLproduct}">
-		                    <div style="width:100%">
-		                        <header >
-		                            <p>${resuAmazon.title}</p>
-		                        </header>
-		                        <img src="${resuAmazon.urlImage}" alt="blabla" width=160 height=160">
-		
-		                        	<p>Amazon</p>
-		                            <div >
-									  <span >Precio:${resuAmazon.Price} euros</span>
-									</div>
-		                    </div>
-		                </a>
-		  		</c:forEach>
 	
 	
   </body>

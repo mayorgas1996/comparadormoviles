@@ -4,37 +4,41 @@ public class Mobile {
 
 	public String id;
 	public String name;
-	public String price;
+	public double price;
 	public String URLimage;
 	public String URLproduct;
+	public String pagina;
 	
 	//Constructor por defecto y vacio
 	public Mobile(){
 		
 		setId(null);
 		setName(null);
-		setPrice(null);
+		setPrice(0.0);
 		setURLimage(null);
 		setURLproduct(null);
+		setPagina(null);
 	}
 	
 	//Constructor con argumentos
-	public Mobile(String idd, String nam, String pric, String URLimag, String URLproduc){
+	public Mobile(String idd, String nam, double pric, String URLimag, String URLproduc, String page){
 		
 		setId(idd);
 		setName(nam);
 		setPrice(pric);
 		setURLimage(URLimag);
 		setURLproduct(URLproduc);
+		setPagina(page);
 	}
 
-	public void set (String idd, String nam, String pric, String URLimag, String URLproduc){
+	public void set (String idd, String nam, double pric, String URLimag, String URLproduc,String page){
 		
 		setId(idd);
 		setName(nam);
 		setPrice(pric);
 		setURLimage(URLimag);
 		setURLproduct(URLproduc);
+		setPagina(page);
 	}
 	
 	//Getters y Setters para los atributos de la clase
@@ -54,11 +58,11 @@ public class Mobile {
 		this.name = name;
 	}
 
-	public String getPrice() {
+	public double getPrice() {
 		return price;
 	}
 
-	public void setPrice(String price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 
@@ -78,8 +82,13 @@ public class Mobile {
 		URLproduct = uRLproduct;
 	}
 	
+	public void setPagina(String page){
+		pagina = page;
+	}
 	
-	
+	public String getPagina() {
+		return pagina;
+	}
 	
 	
 }

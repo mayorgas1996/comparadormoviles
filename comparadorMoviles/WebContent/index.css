@@ -14,3 +14,49 @@ form input {
     margin-top: 20px;
     font-family: cursive;
 }
+
+#resultados_ph{
+	margin-left: 3%;
+    width: 26%;
+    float: left;
+	
+}
+
+tbody{
+	width: 200px;
+	height: 250px;
+}
+
+article{
+	margin-bottom:15px;
+}
+
+table{
+	width: 270px;
+	height: 250px;
+	border-style: solid;
+    border-color: steelblue;
+    border-radius: 10px;
+}
+
+#ordenar{
+	float:left;
+	color:black;
+	width:20%;
+}
+
+#logotipo{
+	max-width:90%;
+	width:240px;
+	heigth:150px;
+}
+
+a.nounderline:link   
+{   
+ text-decoration:none;   
+}
+a:hover{text-decoration:none;}
+
+
+a{text-decoration:none;}
+
